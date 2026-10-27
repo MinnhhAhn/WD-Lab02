@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MINH ANH BOOKS — tiệm sách văn học, du ký và sáng tạo minh họa bằng HTML thuần.">
+  <title>Phiếu đặt sách | MINH ANH BOOKS</title>
+</head>
+<body bgcolor="#FFFDF7" text="#39283F" link="#B94B36" vlink="#705079">
+<a href="#noi-dung">Đến nội dung chính</a>
+<header id="dau-trang">
+  <table role="presentation" width="100%" cellpadding="18" cellspacing="0">
+    <tr>
+      <td width="62%" valign="middle">
+        <a href="index.html"><font face="Georgia, serif" size="7" color="#39283F"><b>MINH ANH</b></font><br>
+        <font face="Georgia, serif" size="5" color="#B94B36">B O O K S</font></a>
+      </td>
+      <td align="right" valign="middle">
+        <font size="2" color="#B94B36"><b>MỘT TIỆM SÁCH NHỎ</b></font>
+        <p>Đọc chậm.<br>Sống đầy.</p>
+      </td>
+    </tr>
+  </table>
+  <nav aria-label="Điều hướng chính">
+    <table role="presentation" width="100%" cellpadding="14" cellspacing="2">
+      <tr><td align="center" bgcolor="#EEE7F2"><a href="index.html"><font color="#39283F">01 · Khám phá</font></a></td>
+<td align="center" bgcolor="#EEE7F2"><a href="chi-tiet.html"><font color="#39283F">02 · Tủ sách</font></a></td>
+<td align="center" bgcolor="#EEE7F2"><a href="bang-gia.html"><font color="#39283F">03 · Giá sách</font></a></td>
+<td align="center" bgcolor="#39283F"><a href="dat-hang.html" aria-current="page"><font color="#FFFFFF">04 · Đặt sách</font></a></td></tr>
+    </table>
+  </nav>
+</header>
+<main id="noi-dung">
+<section>
+<table role="presentation" width="100%" cellpadding="24" cellspacing="0" bgcolor="#E6EEE6"><tr><td>
+<font size="2" color="#B94B36">PHIẾU ĐẶT SÁCH / BẢN THỰC HÀNH</font>
+<h1><font face="Georgia, serif" size="7">Mang một câu chuyện về nhà.</font></h1>
+<p>Chọn cuốn sách của bạn, để lại thông tin giả lập và gửi một yêu cầu mẫu.</p>
+</td></tr></table>
+</section>
+<table role="presentation" width="100%" cellpadding="22" cellspacing="0">
+<tr><td width="68%" valign="top">
+<form action="xac-nhan.html" method="get">
+  <p><b>Dấu * là trường bắt buộc.</b> Chỉ sử dụng thông tin giả lập khi chạy bài.</p>
+  <fieldset>
+    <legend><b>01 / Người nhận câu chuyện</b></legend>
+    <p><label for="ho-ten">Họ tên *</label><br><input id="ho-ten" name="hoTen" type="text" minlength="2" maxlength="60" autocomplete="name" placeholder="Ví dụ: Minh Anh" required></p>
+    <p><label for="email">Email *</label><br><input id="email" name="email" type="email" autocomplete="email" placeholder="demo@example.com" required></p>
+    <p><label for="dien-thoai">Điện thoại giả lập</label><br><input id="dien-thoai" name="dienThoai" type="tel" placeholder="0900000000"></p>
+  </fieldset>
+  <p></p>
+  <fieldset id="chon-sach">
+    <legend><b>02 / Cuốn sách dành cho bạn</b></legend>
+    <p><label for="ma-sach">Chọn sách *</label><br>
+      <select id="ma-sach" name="maSach" required>
+        <option value="">— Chọn một đầu sách —</option>
+        <option value="MA01">MA01 — Mùa đi qua (119.000 đ)</option>
+<option value="MA02">MA02 — Góc hiên nhỏ (108.000 đ)</option>
+<option value="MA03">MA03 — Thư gửi ngày mai (135.000 đ)</option>
+<option value="MA04">MA04 — Những ngày xanh (125.000 đ)</option>
+<option value="MA05">MA05 — Đi qua phố cũ (145.000 đ)</option>
+<option value="MA06">MA06 — Bên kia đồi cát (159.000 đ)</option>
+<option value="MA07">MA07 — Chuyến tàu sớm (139.000 đ)</option>
+<option value="MA08">MA08 — Vẽ một ngày yên (149.000 đ)</option>
+<option value="MA09">MA09 — Chậm lại một chút (112.000 đ)</option>
+<option value="MA10">MA10 — Khu vườn trong nhà (175.000 đ)</option>
+      </select>
+    </p>
+    <p><label for="phien-ban">Phiên bản *</label><br><select id="phien-ban" name="phienBan" required><option value="bia-mem">Bìa mềm tiêu chuẩn</option><option value="boc-trong">Bìa mềm có bọc trong — miễn phí</option></select></p>
+    <p><label for="so-luong">Số lượng (1–5 quyển) *</label><br><input id="so-luong" name="soLuong" type="number" min="1" max="5" step="1" value="1" required></p>
+  </fieldset>
+  <p></p>
+  <fieldset>
+    <legend><b>03 / Gói ghém và gửi đi</b></legend>
+    <p>Hình thức nhận *</p>
+    <p><input id="nhan-tai-tiem" name="nhanHang" type="radio" value="tai-tiem" required><label for="nhan-tai-tiem">Nhận tại tiệm</label><br><input id="giao-tan-noi" name="nhanHang" type="radio" value="giao-hang" required><label for="giao-tan-noi">Giao tận nơi</label></p>
+    <p><input id="goi-qua" name="goiQua" type="checkbox" value="co"><label for="goi-qua">Gói quà giấy kraft và thiệp trống — miễn phí</label></p>
+    <p><label for="ghi-chu">Lời nhắn / địa chỉ giả lập nếu giao tận nơi</label><br><textarea id="ghi-chu" name="ghiChu" rows="5" cols="28" maxlength="300" placeholder="Một lời nhắn nhỏ cho tiệm..."></textarea></p>
+  </fieldset>
+  <p><input id="dong-y" name="dongY" type="checkbox" value="da-hieu" required><label for="dong-y">Tôi hiểu đây là biểu mẫu minh họa, không tạo đơn hàng thật. *</label></p>
+  <p><button type="submit">Gửi yêu cầu đặt sách →</button> <button type="reset">Điền lại từ đầu</button></p>
+</form>
+</td><td valign="top" bgcolor="#EEE7F2">
+  <aside aria-labelledby="truoc-khi-gui">
+    <font size="2" color="#B94B36">MỘT LỜI NHẮC NHỎ</font>
+    <h2 id="truoc-khi-gui"><font face="Georgia, serif" size="5">Trước khi<br>gửi cho tiệm</font></h2>
+    <ol><li>Ghi nhớ mã sách bạn thích.</li><li>Chọn đúng mã trong danh sách.</li><li>Nhập thông tin giả lập.</li><li>Kiểm tra rồi gửi yêu cầu mẫu.</li></ol>
+    <hr>
+    <p><b>Cần xem lại giá?</b></p><p><a href="bang-gia.html">Mở bảng giá →</a></p>
+    <p><b>Chưa tìm được sách?</b></p><p><a href="index.html#goi-y">Ghé góc gợi ý →</a></p>
+    <hr><p><small>Website không tính tổng đơn, thu tiền hay gửi email xác nhận.</small></p>
+  </aside>
+</td></tr>
+</table>
+
+</main>
+<footer>
+  <p align="right"><a href="#dau-trang">↑ Về đầu trang</a></p>
+  <table role="presentation" width="100%" bgcolor="#39283F" cellpadding="22" cellspacing="0">
+    <tr>
+      <td width="60%" valign="top">
+        <font color="#FFFFFF" size="5" face="Georgia, serif"><b>MINH ANH BOOKS</b></font>
+        <p><font color="#F2DBCB">Một cuốn sách hợp lòng.<br>Một khoảng trời của riêng bạn.</font></p>
+        <font color="#FFFFFF">Thực hiện: <b>Minh Anh</b> · © 2026</font>
+      </td>
+      <td valign="top">
+        <font color="#FFFFFF"><b>Ghé tiệm</b></font>
+        <p><a href="index.html#ve-tiem"><font color="#FFFFFF">Câu chuyện của tiệm</font></a></p>
+        <p><a href="index.html#lien-he"><font color="#FFFFFF">Liên hệ &amp; chính sách</font></a></p>
+        <p><a href="bang-gia.html"><font color="#FFFFFF">Xem bảng giá</font></a></p>
+      </td>
+    </tr>
+    <tr><td colspan="2"><font color="#F2DBCB" size="2">Website thực hành HTML. Tên sách, giá và chính sách là dữ liệu hư cấu. Không bán hàng, thu tiền hoặc lưu đơn hàng thật.</font></td></tr>
+  </table>
+</footer>
+</body>
+</html>
